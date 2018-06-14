@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-declare var $:any;
+
+declare var $: any;
 @Component({
   selector: 'app-left-sidebar',
   templateUrl: './left-sidebar.component.html',
@@ -12,8 +13,18 @@ export class LeftSidebarComponent implements OnInit {
   ngOnInit() {
   }
 
-  toggleSidebar(){
+  toggleSidebar() {
     console.log('inside sidebar');
+  }
+
+  ngAfterViewInit() {
+    $(document).ready(function () {
+      $(".btn").on("click",function () {
+        $(".sidebar").toggleClass('no-sidebar');
+        $(".btn").toggleClass('btnc');
+        // $(".sidebar").hide();
+      });
+    });
   }
 
 }

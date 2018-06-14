@@ -1,16 +1,14 @@
 <div>
-  <button type="button" class="toggle-btn" id="toggleBtn" (click)="toggleSidebar()">
-  <i class="fa fa-bars" aria-hidden="true"></i>
-  </button>
+  <button type="button" class="btn" (click)="toggleSidebar()"></button>
   <div class="sidebar">
     <ul>
       <li>
         <a [routerLink]="['']">
-          <i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+          <i class="fa fa-dashboard fa-fw"></i></a>
       </li>
       <li>
         <a [routerLink]="['/dashboard/about']">
-          <i class="fa fa-user fa-fw"></i> About</a>
+          <i class="fa fa-user fa-fw"></i></a>
 
       </li>
 
