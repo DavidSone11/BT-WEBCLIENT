@@ -1,29 +1,3 @@
-.logout-container {
-    position: fixed;
-    width: 1000px;
-    height: 120px;
-    border: 1px solid grey;
-    border-radius: 3px;
-    box-shadow: 0px 5px 2px -2px rgba(0, 0, 0, .15);
-    padding: 40px 0 0 20px;
-    top: 20%;
-    left: 15%;
-}
-
-.logout-container p i {
-    color: blue;
-    font-size: 25px;
-}
-
-.logout-container p {
-    font-weight: bold;
-    padding: 0 100px;
-}
-.logout-container a {
-    font-weight: normal;
-    text-decoration: none;
-}
-
 
 .overlay {
     position:fixed;
@@ -39,10 +13,18 @@
 .overlay-message{
     position: absolute;
     top: 40%;
-    left: 50%;
-    width: 400px;
-    height: 250px;
+    left: 20%;
+    width: 800px;
+    height: 100px;
     color: #fff;
     z-index: 9999;
     overflow: hidden;
+    background: rgba(0,0,0,0.4);
+    padding: 30px 90px;
+}
+
+
+.overlay-message i{
+    font-size: 30px;
+    color:red;
 }
