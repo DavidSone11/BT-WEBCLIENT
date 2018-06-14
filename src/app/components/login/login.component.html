@@ -10,12 +10,12 @@
     <h1>Login</h1>
     <form #form="ngForm" (ngSubmit)="dologin(form.value)">
       <input type="text" placeholder="UserName" required pattern="[a-zA-Z][a-zA-Z ]+" [(ngModel)]="userOBJ.username"
-        name="username" #name="ngModel" required>
+        name="username" #name="ngModel" required autocomplete="off">
 
         <br>
 
       <input type="password" placeholder="Password" [(ngModel)]="userOBJ.password" name="password" #name="ngModel"
-        required>
+        required autocomplete="off">
 
         <br>
         <br>
