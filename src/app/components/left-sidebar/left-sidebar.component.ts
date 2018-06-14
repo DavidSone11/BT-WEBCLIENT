@@ -21,6 +21,8 @@ export class LeftSidebarComponent implements OnInit {
     $(document).ready(function () {
       $(".btn").on("click",function () {
         $(".sidebar").toggleClass('no-sidebar');
+        $(".page-wrapper").toggleClass('no-page-wrapper');
+        $('.page-wrapper').toggle();
         $(".btn").toggleClass('btnc');
         // $(".sidebar").hide();
       });
