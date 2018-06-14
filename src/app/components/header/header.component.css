@@ -72,12 +72,14 @@ li {
 
 input[type=text] {
     width: 100px;
+    height:30px;
     -webkit-transition: width .35s ease-in-out;
     transition: width .35s ease-in-out;
     border-radius: 25px;
     border:1px solid #2c3e50;
     outline: none;
     padding: 5px 20px;
+    -webkit-font-smoothing: antialiased;
 }
 
 input[type=text]:focus {
