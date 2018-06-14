@@ -14,6 +14,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { AuthGuard } from './guards/app.authGuard';
 import { routes } from './app.router.module';
 import { RegisterComponent } from './components/register/register.component';
+import { LeftSidebarComponent } from './components/left-sidebar/left-sidebar.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { RegisterComponent } from './components/register/register.component';
     LoginComponent,
     AboutComponent,
     DashboardComponent,
-    RegisterComponent
+    RegisterComponent,
+    LeftSidebarComponent
   ],
   imports: [
     BrowserModule,
