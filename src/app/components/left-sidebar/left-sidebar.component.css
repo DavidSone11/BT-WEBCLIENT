@@ -1,0 +1,25 @@
+.sidebar {
+    float: left;
+    width: 200px;
+    background: #2c3e50;
+    height: 100%;
+    overflow: hidden;
+    min-height: 800px;
+}
+
+
+
+.sidebar ul {
+    margin: 0;
+    padding: 0;
+}
+.sidebar ul li a {
+    text-decoration: none;
+    color:#fff;
+    padding: 0 20px;
+    
+}
+.sidebar ul li i {
+    color:#fff;
+    
+}
