@@ -1,24 +1,30 @@
 <div class="overlay" *ngIf="isLoading">
   <div class="overlay-message">
-    <i class="fa fa-spinner fa-spin fa-5x" *ngIf="isLoading" aria-hidden="true"></i>
+
+    <div class="load-bar">
+      <div class="bar"></div>
+    </div>
+    <p>LOADING</p>
   </div>
 </div>
 
 
+
+
 <div class="login-container" *ngIf="!isLoading">
+
   <div class="login-box">
     <h1>Login</h1>
     <form #form="ngForm" (ngSubmit)="dologin(form.value)">
-      <input type="text" placeholder="UserName" required pattern="[a-zA-Z][a-zA-Z ]+" [(ngModel)]="userOBJ.username"
-        name="username" #name="ngModel" required autocomplete="off">
+      <input type="text" placeholder="UserName" required pattern="[a-zA-Z][a-zA-Z ]+" [(ngModel)]="userOBJ.username" name="username"
+        #name="ngModel" required autocomplete="off">
 
-        <br>
+      <br>
 
-      <input type="password" placeholder="Password" [(ngModel)]="userOBJ.password" name="password" #name="ngModel"
-        required autocomplete="off">
+      <input type="password" placeholder="Password" [(ngModel)]="userOBJ.password" name="password" #name="ngModel" required autocomplete="off">
 
-        <br>
-        <br>
+      <br>
+      <br>
 
       <button type="submit" class="login-btn">
         <i class="fa fa-sign-in fa-fw fa-1x" aria-hidden="true"></i> Login
@@ -32,7 +38,8 @@
         <i class="fa fa-sign-in fa-fw fa-1x" aria-hidden="true"></i>
         Register
       </button>
-
     </form>
+
+
   </div>
 </div>

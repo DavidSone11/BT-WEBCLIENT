@@ -76,6 +76,7 @@ input[type=text] {
     transition: width .35s ease-in-out;
     border-radius: 25px;
     border:1px solid #2c3e50;
+    outline: none;
 }
 
 input[type=text]:focus {
