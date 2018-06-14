@@ -10,6 +10,27 @@
     left: 65px;
     z-index: 1030;
 }
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav-link {
+    display: block;
+    padding: .5em 1em;
+}
+.mediumnavigation .nav-item{
+    font-size: .9rem;
+}
+
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
 
 .btn{
     float: right;
