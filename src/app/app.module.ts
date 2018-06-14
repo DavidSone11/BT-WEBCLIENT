@@ -16,6 +16,7 @@ import { routes } from './app.router.module';
 import { RegisterComponent } from './components/register/register.component';
 import { LeftSidebarComponent } from './components/left-sidebar/left-sidebar.component';
 import { HeaderComponent } from './components/header/header.component';
+import { LogoutComponent } from './components/logout/logout.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { HeaderComponent } from './components/header/header.component';
     DashboardComponent,
     RegisterComponent,
     LeftSidebarComponent,
-    HeaderComponent
+    HeaderComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,
