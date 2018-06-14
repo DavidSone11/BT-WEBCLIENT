@@ -16,9 +16,10 @@ body,html{
     padding: 0 15px;
     min-height: 568px;
     background-color: #fff;
+    transition:0.8s all;
 }
 .no-page-wrapper {
-    margin: -50px;
+    margin: 0px!important;
 }
 
 @media(min-width:768px) {
