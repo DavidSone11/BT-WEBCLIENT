@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
@@ -33,7 +33,7 @@ import { RegisterComponent } from './components/register/register.component';
     ReactiveFormsModule,
     RouterModule,
     routes,
-    NgbModule.forRoot(), // Add Bootstrap module here.
+
   ],
   providers: [
     AuthGuard
