@@ -1,0 +1,36 @@
+
+.mediumnavigation {
+    background: rgba(255,255,255,.97);
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.15);
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 65px;
+    z-index: 1030;
+}
+
+.btn{
+    float: right;
+    cursor: pointer;
+    padding:0 10px;
+    color:#2c3e50;
+    text-decoration: none;
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 50px;
+    height:40px;
+    
+}
+.btn:before{
+    content: '\f0c9';
+    font-family: FontAwesome;
+}
+.btnc:before{
+    content: '\f00d';
+    font-family: FontAwesome;
+    outline: none;
+    border: none;
+}
