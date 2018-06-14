@@ -1,0 +1,48 @@
+<div class="col-lg-8">
+  <br/>
+  <br/>
+  <div class="card">
+    <div class="card-header">
+      <h3>Create Account</h3>
+    </div>
+    <div class="card-body">
+      <br>
+
+      <div class="row">
+        <form #form="ngForm" (ngSubmit)="register(form.value)">
+          <div class="col-lg-6">
+            <div class="form-group">
+              <input type="type" class="form-control" id="fname" name="fname" [(ngModel)]="regOBJ.fname" placeholder="FirstName" #fname="ngModel">
+              <div *ngIf="fname.errors && (fname.dirty || fname.touched)" class="alert alert-danger">
+                <div [hidden]="!fname.errors.required" style="color:red">
+                  FirstName is required!
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+
+              <input type="text" class="form-control" id="lname" name="lname" [(ngModel)]="regOBJ.lname" placeholder="Last Name">
+            </div>
+
+            <div class="form-group">
+              <input type="text" class="form-control" id="uname" name="uname" [(ngModel)]="regOBJ.username" placeholder="User Name">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" name="email" [(ngModel)]="regOBJ.email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="pass" name="pass" [(ngModel)]="regOBJ.pass" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="cpass" name="cpass" [(ngModel)]="regOBJ.cpass" placeholder="Confirm Password">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
