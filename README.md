@@ -337,3 +337,5 @@ In the angular-cli.json file locate the styles[] array and add font-awesome refe
 ],
 
 https://embed.plnkr.co/ouX2zkGeeTOroZF2COfC/
+
+http://www.angulartypescript.com/angular-2-forms/
