@@ -21,6 +21,7 @@ export class HeaderComponent implements OnInit {
       $(".btn").on("click",function () {
         $(".sidebar").toggleClass('no-sidebar');
         $(".page-wrapper").toggleClass('no-page-wrapper');
+        $(".navbar").toggleClass('no-navbar');
         // $('.page-wrapper').toggle();
         $(".btn").toggleClass('btnc');
         // $(".sidebar").hide();

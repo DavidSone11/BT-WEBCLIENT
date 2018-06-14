@@ -9,6 +9,15 @@
     right: 0;
     left: 65px;
     z-index: 1030;
+    transition: 0.6s all;
+}
+.navbar{
+
+}
+.no-navbar {
+    top: 0;
+    right: 0;
+    left: 0;
 }
 .navbar-nav {
     display: flex;
@@ -21,6 +30,7 @@
 .nav-link {
     display: block;
     padding: .5em 1em;
+    color: #34495e;
 }
 .mediumnavigation .nav-item{
     font-size: .9rem;
@@ -34,12 +44,20 @@ li {
     cursor: pointer;
     color:#2c3e50;
     font-family: FontAwesome;
+    display:block;
+    border: none;
+    outline:none;
 }
-.btn:before{
+.btn:focus{
+    display:block;
+    border: none;
+    outline:none;
+}
+.btn::before{
     content: '\f0c9';
     font-family: FontAwesome;
 }
-.btnc:before{
+.btnc::before{
     content: '\f00d';
     font-family: FontAwesome;
     outline: none;
