@@ -314,3 +314,23 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 export class OtherModule {
 }
 
+
+npm install font-awesome --save
+
+In the angular-cli.json file locate the styles[] array and add font-awesome references directory here, like below:
+
+"apps": [
+          {
+             "root": "src",
+             "outDir": "dist",
+             ....
+             "styles": [
+                "styles.css",
+                "../node_modules/bootstrap/dist/css/bootstrap.css",
+                "../node_modules/font-awesome/css/font-awesome.css" // -here webpack will automatically build a link css element out of this!?
+             ],
+             ...
+         }
+       ]
+
+],
