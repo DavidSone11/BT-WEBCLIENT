@@ -12,4 +12,8 @@ export class LeftSidebarComponent implements OnInit {
   ngOnInit() {
   }
 
+  toggleSidebar(){
+    console.log('inside sidebar');
+  }
+
 }
