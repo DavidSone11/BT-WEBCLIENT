@@ -20,10 +20,7 @@ export class LoginComponent implements OnInit {
   }
 
   dologin(form: any): void{
-    // localStorage.setItem('currentUser', JSON.stringify({ username: this.userOBJ.username, token: this.token }));
-    //localStorage.setItem('username',this.userOBJ.username);
-    //localStorage.setItem('password',this.userOBJ.password);
-    console.log(this.userOBJ.password);
+    localStorage.setItem('currentUser', JSON.stringify({ username: this.userOBJ.username, token: this.token }));
     this.router.navigate(['/dashboard']);
     
     
