@@ -1,6 +1,10 @@
-<div class="logout-container">
-  <p>
-    <i class="fa fa-exclamation-circle" aria-hidden="true"></i> You are now logged Out. Any automatic login has also been stopped.
-    <a [routerLink]="['/login']" routerLinkActive='cstmactive' [routerLinkActiveOptions]="{exact: true}"> LogIn? </a>
-  </p>
+<div class="overlay">
+  <div class="overlay-message">
+    <div class="logout-container">
+      <p>
+        <i class="fa fa-exclamation-circle" aria-hidden="true"></i> You are now logged Out. Any automatic login has also been stopped.
+        <a [routerLink]="['/login']" routerLinkActive='cstmactive' [routerLinkActiveOptions]="{exact: true}"> LogIn? </a>
+      </p>
+    </div>
+  </div>
 </div>

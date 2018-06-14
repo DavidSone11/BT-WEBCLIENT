@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LogoutComponent implements OnInit {
 
-  constructor() { }
+  public isLoading = false;
+  
+  constructor() { 
+    localStorage.removeItem('currentUser');
+  }
 
   ngOnInit() {
+    
   }
+
+
+  
 
 }

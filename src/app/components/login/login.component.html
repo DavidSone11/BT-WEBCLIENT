@@ -1,7 +1,11 @@
-<div class="row" style="
-margin-left: 400px;
-margin-top:  100px;
-">
+
+<div class="overlay" *ngIf="isLoading">
+  <div class="overlay-message">
+    <i class="fa fa-spinner fa-spin fa-5x" *ngIf="isLoading" aria-hidden="true"></i>
+</div>
+</div>
+
+<div class="row" style="margin-left: 400px;margin-top:  100px;" *ngIf="!isLoading">
   <div class="col-lg-8 col-md-offset-2">
     <div class="card">
       <div class="card-header">
@@ -9,32 +13,31 @@ margin-top:  100px;
       </div>
       <div class="card-body">
         <br/>
-        
-          <form #form="ngForm" (ngSubmit)="dologin(form.value)">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="UserName" required pattern="[a-zA-Z][a-zA-Z ]+" [(ngModel)]="userOBJ.username"
-                  name="username" #name="ngModel" required>
-              </div>
-              <div class="form-group">
-                <input type="password" class="form-control" placeholder="Password" [(ngModel)]="userOBJ.password" name="password" #name="ngModel"
-                  required>
-              </div>
 
-              <div class="form-group">
-                <button type="submit" class="btn btn-primary">
-                  <i class="fa fa-sign-in fa-fw fa-1x" aria-hidden="true"></i>
-                  <i class="fa fa-spinner" *ngIf="isLoading" aria-hidden="true"></i> Login</button>
-                
+        <form #form="ngForm" (ngSubmit)="dologin(form.value)">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="UserName" required pattern="[a-zA-Z][a-zA-Z ]+" [(ngModel)]="userOBJ.username"
+              name="username" #name="ngModel" required>
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" placeholder="Password" [(ngModel)]="userOBJ.password" name="password" #name="ngModel"
+              required>
+          </div>
 
-                &nbsp;&nbsp;&nbsp;&nbsp;
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary">
+              <i class="fa fa-sign-in fa-fw fa-1x" aria-hidden="true"></i> Login</button>
 
-                <a class="btn btn-primary" [routerLink]="['/register']">
-                  <i class="fa fa-sign-in fa-fw fa-1x" aria-hidden="true"></i>
-                  Register</a>
-              </div>
-            
-          </form>
-        
+
+            &nbsp;&nbsp;&nbsp;&nbsp;
+
+            <a class="btn btn-primary" [routerLink]="['/register']">
+              <i class="fa fa-sign-in fa-fw fa-1x" aria-hidden="true"></i>
+              Register</a>
+          </div>
+
+        </form>
+
       </div>
     </div>
   </div>
