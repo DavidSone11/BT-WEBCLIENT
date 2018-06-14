@@ -31,3 +31,10 @@ body,html{
         min-height: 700px;
     }
 }
+
+.cstmactive{
+    background: #2c3e50;
+    opacity: 0.6;
+    transition: 0.8s all;
+    border-right:5px solid #fff;
+}
